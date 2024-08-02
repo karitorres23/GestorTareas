@@ -24,5 +24,11 @@ module.exports = {
         },
     ],
    },
-
+   devtool: 'source-map', //Geración source maps para facilitar la depuración 
+   devServer: {
+     contenBase: path.resolve(_dirname, 'dist'), //Carpeta del que corrará el servidor 
+     compress: true, //Habilitar comprensión gzip
+     port: 9000, //Puerto del servicio de desarrollo
+     
+   } 
 }
